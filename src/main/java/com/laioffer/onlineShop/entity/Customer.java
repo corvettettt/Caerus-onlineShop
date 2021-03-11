@@ -1,10 +1,11 @@
 package com.laioffer.onlineShop.entity;
 
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
 @Table(name="customer")
-public class Customer {
+public class Customer implements Serializable {
     private static final long serialVersionUID = 2652327633296064143L;
 
     @Id
